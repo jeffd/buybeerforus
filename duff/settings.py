@@ -28,8 +28,6 @@ MEDIA_ROOT = os.path.join(PROJECT_PATH, 'media/')
 
 STATIC_ROOT = os.path.join(PROJECT_PATH, 'static/')
 
-ROOT_URLCONF = 'urls'
-
 STATICFILES_DIRS = (
     os.path.join(PROJECT_PATH, 'assets/'),
 )
