@@ -3,5 +3,20 @@
 {% block page_class %}home-page{% endblock %}
 
 {% block content %}
-   {# todo: Include the main content here #}
+<a id="bgndVideo" href="http://www.youtube.com/watch?v=hLbGZCL8bTw"
+  class="movie {opacity:.8, isBgndMovie:{width:'window',mute:true}, ratio:'16/9',quality:'default'}">
+  Needs More Dog
+  </a>
+
+{% endblock %}
+
+{% block javascript %}
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.metadata.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.mb.YTPlayer.js"></script>
+
+  $(function(){
+    $(".movie").mb_YTPlayer();
+  });
+
+</script>
 {% endblock %}
