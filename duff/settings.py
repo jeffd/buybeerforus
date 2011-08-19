@@ -30,10 +30,10 @@ STATIC_ROOT = os.path.join(PROJECT_PATH, 'assets/')
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_PATH, 'assets/js'),
-    os.path.join(PROJECT_PATH, 'assets/css')
-)
+# STATICFILES_DIRS = (
+#     os.path.join(PROJECT_PATH, 'assets/js'),
+#     os.path.join(PROJECT_PATH, 'assets/css')
+# )
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 
