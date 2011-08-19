@@ -26,10 +26,9 @@ PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
 
 MEDIA_ROOT = os.path.join(PROJECT_PATH, 'media/')
 
-ROOT_PATH = os.path.abspath(os.path.dirname(__file__))
-STATIC_ROOT = (os.path.join(ROOT_PATH, "/"),)
+STATIC_ROOT = os.path.join(PROJECT_PATH, 'assets/')
 
-STATIC_URL = '/assets/'
+STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     os.path.join(PROJECT_PATH, 'assets/'),
