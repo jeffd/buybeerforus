@@ -34,6 +34,8 @@ STATICFILES_DIRS = (
     os.path.join(PROJECT_PATH, 'assets/'),
 )
 
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
